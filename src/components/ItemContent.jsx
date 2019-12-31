@@ -148,12 +148,12 @@ const ItemContent = ({ post, html }) => {
 
       <hr></hr>
 
-      <Table>
-        {/* <thead>
+      {/* <Table>
+        <thead>
             <tr>
               <th colspan="2" >Plant Details</th>
             </tr>
-          </thead> */}
+          </thead>
         <tbody>
           <tr>
             <th scope="row">Primary Color: </th>
@@ -180,7 +180,7 @@ const ItemContent = ({ post, html }) => {
             <td>{post.temperature}</td>
           </tr>
         </tbody>
-      </Table>
+      </Table> */}
     </Wrapper>
   );
 };

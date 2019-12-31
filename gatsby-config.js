@@ -116,8 +116,7 @@ module.exports = {
             "Link: /static/care/dummy.pdf; rel=preload;",
             "Link: /static/dummy.pdf; rel=preload;",
           ],
-        }
-      
+        }     
     }
   ],
 };
