@@ -58,14 +58,17 @@ const Layout = ({ children }) => (
             -moz-osx-font-smoothing: grayscale;
           }
           html,
-        
-
           body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
             background-color: hsla(228, 34.9%, 88.1%, 0.3);
+          }
 
+          .site {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+          }
+          .site-content {
+            flex-grow: 1;
           }
           a {
             color: ${theme.colors.link};
@@ -122,12 +125,15 @@ const Layout = ({ children }) => (
           // }
         ]}
       /> */}
-      <LoadableBurgerMenu />
-      <NavBar />
-      
-      {children}
-      <Footer />
-      <ZygoteCart />
+      {/* <LoadableBurgerMenu /> */}
+      <div className="site">
+        <NavBar />
+        <div className="site-content">
+          {children}
+        </div>
+        <Footer />
+        <ZygoteCart />
+      </div>
     </Fragment>
   </ThemeProvider>
 );
