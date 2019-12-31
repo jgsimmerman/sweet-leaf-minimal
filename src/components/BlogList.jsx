@@ -6,8 +6,28 @@ import Img from 'gatsby-image';
 import { TagsBlock } from 'components';
 import { Container } from 'layouts';
 
-const Wrapper = styled.article`
-  margin: 0 3rem;
+const Wrapper = styled.main`
+    
+  margin: 1rem 1rem 1rem 1rem;
+  flex-basis: calc(99.9% * 1 / 3 - 2.5rem);
+  max-width: calc(99.9% * 1 / 3 - 2.5rem);
+  width: calc(99.9% * 1 / 3 - 2.5rem);
+  justify-content: space-around;
+
+  @media (max-width: 1300px) {
+    flex-basis: calc(99.9% * 1 / 2 - 2.5rem);
+    max-width: calc(99.9% * 1 / 2 - 2.5rem);
+    width: calc(99.9% * 1 / 2 - 2.5rem);
+  }
+  @media (max-width: 800px) {
+    flex-basis: 100%;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  @media (max-width: 500px) {
+    min-height: 200px;
+  }
 `;
 
 const Image = styled.div`
@@ -82,7 +102,7 @@ const Date = styled.div`
   color: ${props => props.theme.colors.black.lighter};
 `;
 
-const Title = styled.h1`
+const Title = styled.h2`
   margin: 0;
 `;
 
@@ -108,8 +128,8 @@ const CatalogContainer = styled(Container)`
   }
 `;
 
-const BlogList = ({ path, cover, title, date, excerpt, tags }) => (
-  <CatalogContainer>
+const BlogList = ({ path, cover, title, date, excerpt, tags, story }) => (
+  // <CatalogContainer>
     <Wrapper>
       <Image>
         <Link to={path} title={title}>
@@ -121,11 +141,11 @@ const BlogList = ({ path, cover, title, date, excerpt, tags }) => (
         <Link to={path}>
           <Title>{title}</Title>
         </Link>
-        <TagsBlock list={tags} />
-        {excerpt}
+        {/* <TagsBlock list={tags} /> */}
+        {/* {story} */}
       </Information>
     </Wrapper>
-  </CatalogContainer>
+  // </CatalogContainer>
 );
 
 export default BlogList;

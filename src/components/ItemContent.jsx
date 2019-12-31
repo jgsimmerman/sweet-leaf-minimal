@@ -27,8 +27,7 @@ const Wrapper = styled.div`
 const Image = styled.span`
   background: #eee;
   flex: 1;
-  min-height: 50vh;
-  
+  min-height: 50vh;  
 `;
 
 const Info = styled.span`
@@ -112,7 +111,7 @@ const ItemContent = ({ post, html }) => {
               <strong>${post.price}</strong>
             </Cost>
             <p>
-            <Link to={post.care}>Care Instructions</Link>
+            <a href={`${post.care}`}>Care Instructions</a>
             </p>
             
             {/* <p className="ItemName">
