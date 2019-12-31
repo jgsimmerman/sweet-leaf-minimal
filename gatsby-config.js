@@ -79,36 +79,7 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
-    // {
-    //   resolve: 'gatsby-plugin-snipcart',
-    //   options: {
-    //     jquery: '', 
-    //     js: 'https://cdn.snipcart.com/themes/v3.0.5/default/snipcart.js',
-    //     styles: 'https://cdn.snipcart.com/themes/v3.0.5/default/snipcart.css',
-    //     // jquery: 'https://code.jquery.com/jquery-3.4.1.min.js',
-    //     // js: 'https://cdn.snipcart.com/scripts/2.0/snipcart.js',
-    //     // styles: 'https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css',
-    //     apiKey:
-    //       'OWRmMjdlZWUtNzM1NS00YmQzLWFlN2EtOGU2MTIyOGQyZDQ4NjM2OTUwMjk5ODUzNDc5OTgw',
-    //     autopop: true,
-    //   },
-    // },
-    /* {
-      resolve: 'gatsby-source-google-sheets',
-      options: {
-          spreadsheetId: '1L6b9PCnciNzXXnWrv_MjC1WTGWZjiE31LhVxU3zZExQ',
-          worksheetTitle: 'echeveria\x20(test\x20words)',
-          credentials: require('./succulents-eceeb0db1c4f.json')
-      }
-    },
-    {
-      resolve: 'gatsby-source-google-sheets',
-      options: {
-          spreadsheetId: '1L6b9PCnciNzXXnWrv_MjC1WTGWZjiE31LhVxU3zZExQ',
-          worksheetTitle: 'Senecio',
-          credentials: require('./succulents-eceeb0db1c4f.json')
-      }
-    }, */
+    
     // {
     //   resolve: `gatsby-plugin-purgecss`,
     //   options: {

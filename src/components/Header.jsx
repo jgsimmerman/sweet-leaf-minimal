@@ -36,7 +36,7 @@ const Text = styled.div`
   align-items: center;
 `;
 
-const Subtitle = styled.p`
+const Subtitle = styled.h3`
   max-width: 650px;
   color: ${props => props.theme.colors.white.light};
 `;
